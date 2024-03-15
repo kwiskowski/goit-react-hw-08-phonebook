@@ -41,9 +41,7 @@ const PhonebookForm = () => {
     }
 
     const isNumberExist = contacts.find(
-      ({ number }) =>
-        // contact.number.replace(/\D/g, '') === number.replace(/\D/g, '')
-        contact.number === number
+      ({ number }) => contact.number === number
     );
 
     if (isNumberExist) {
